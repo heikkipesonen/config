@@ -3,9 +3,8 @@ return {
   opts = {
     servers = {
       vtsls = { enabled = false },
-      ts_ls = {
-        enabled = false,
-      },
+      ts_ls = { enabled = false },
+      graphql = {},
     },
   },
 }

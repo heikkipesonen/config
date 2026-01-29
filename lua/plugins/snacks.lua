@@ -6,7 +6,10 @@ return {
     picker = {
       sources = {
         files = { hidden = true },
-        grep = { hidden = true },
+        grep = {
+          hidden = true,
+          args = { "--fixed-strings" },
+        },
         explorer = { hidden = true },
       },
     },

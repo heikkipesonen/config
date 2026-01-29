@@ -13,3 +13,7 @@ end, { desc = "Copy relative file path" })
 vim.keymap.set("n", "<leader>fY", function()
   vim.fn.setreg("+", vim.fn.expand("%:p"))
 end, { desc = "Copy absolute file path" })
+
+vim.keymap.set("i", "<C-n>", function()
+  require("blink.cmp").show()
+end, { desc = "Trigger completion" })
