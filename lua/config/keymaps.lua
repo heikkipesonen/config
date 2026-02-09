@@ -17,3 +17,6 @@ end, { desc = "Copy absolute file path" })
 vim.keymap.set("i", "<C-n>", function()
   require("blink.cmp").show()
 end, { desc = "Trigger completion" })
+
+vim.keymap.set("n", "¨d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+vim.keymap.set("n", "åd", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
