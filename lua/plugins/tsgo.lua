@@ -4,7 +4,9 @@ return {
     servers = {
       vtsls = { enabled = false },
       ts_ls = { enabled = false },
-      graphql = {},
+      graphql = {
+        filetypes = { "graphql", "typescript", "typescriptreact", "javascriptreact" },
+      },
     },
   },
 }
