@@ -12,9 +12,19 @@ return {
           },
         },
       },
+      cssmodules_ls = {
+        filetypes = { "typescriptreact", "javascriptreact" },
+      },
       graphql = {
         filetypes = { "graphql", "typescript", "typescriptreact", "javascriptreact" },
-        root_dir = require("lspconfig.util").root_pattern(".graphqlrc", ".graphqlrc.yml", ".graphqlrc.yaml", ".graphqlrc.json", "graphql.config.js", "graphql.config.ts"),
+        root_dir = require("lspconfig.util").root_pattern(
+          ".graphqlrc",
+          ".graphqlrc.yml",
+          ".graphqlrc.yaml",
+          ".graphqlrc.json",
+          "graphql.config.js",
+          "graphql.config.ts"
+        ),
       },
       eslint = {
         settings = {
