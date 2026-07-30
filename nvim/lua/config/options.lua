@@ -9,3 +9,11 @@ vim.opt.cursorline = false
 vim.opt.updatetime = 300
 vim.opt.timeoutlen = 500
 vim.opt.redrawtime = 10000
+
+-- Disable inlay hints globally and on every LSP attach
+vim.lsp.inlay_hint.enable(false)
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    vim.lsp.inlay_hint.enable(false, { bufnr = args.buf })
+  end,
+})

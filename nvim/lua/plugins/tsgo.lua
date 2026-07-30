@@ -11,20 +11,27 @@ return {
             positionEncodings = { "utf-16" },
           },
         },
+        settings = {
+          typescript = {
+            inlayHints = {
+              parameterNames = { enabled = "none", suppressWhenArgumentMatchesName = true },
+              parameterTypes = { enabled = false },
+              variableTypes = { enabled = false },
+              propertyDeclarationTypes = { enabled = false },
+              functionLikeReturnTypes = { enabled = false },
+              enumMemberValues = { enabled = false },
+            },
+          },
+        },
       },
       cssmodules_ls = {
         filetypes = { "typescriptreact", "javascriptreact" },
+        init_options = {
+          camelCase = false,
+        },
       },
       graphql = {
         filetypes = { "graphql", "typescript", "typescriptreact", "javascriptreact" },
-        root_dir = require("lspconfig.util").root_pattern(
-          ".graphqlrc",
-          ".graphqlrc.yml",
-          ".graphqlrc.yaml",
-          ".graphqlrc.json",
-          "graphql.config.js",
-          "graphql.config.ts"
-        ),
       },
       eslint = {
         settings = {

@@ -4,6 +4,8 @@ return {
     ensure_installed = {
       -- ...elided other configs
       "graphql",
+      "cpp",
+      "c",
     },
     highlight = {
       enable = true,
