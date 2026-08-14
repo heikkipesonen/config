@@ -7,7 +7,9 @@ hl.config({
 		kb_options = "numpad:mac",
 		numlock_by_default = true,
 		-- sensitivity = -0.25,
-		accel_profile = "flat",
+		accel_profile = "adaptive",
+		sensitivity = 0.0,
+		force_no_accel = 0,
 	},
 	-- Uncomment the section below to enable software cursors; this can help with cursor display or behavior issues
 	-- cursor = {
