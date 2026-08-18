@@ -20,3 +20,7 @@ end, { desc = "Trigger completion" })
 
 vim.keymap.set("n", "¨d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 vim.keymap.set("n", "åd", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+
+-- Jump to block boundaries (Finnish keyboard friendly)
+vim.keymap.set({ "n", "o", "x" }, "<leader>jj", "]}", { noremap = true, desc = "Jump to next }" })
+vim.keymap.set({ "n", "o", "x" }, "<leader>jk", "[{", { noremap = true, desc = "Jump to prev {" })

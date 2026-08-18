@@ -3,7 +3,6 @@
 -- Add any additional options here
 
 -- Performance fixes for smooth scrolling
-vim.opt.lazyredraw = true
 vim.opt.synmaxcol = 200
 vim.opt.cursorline = false
 vim.opt.updatetime = 300

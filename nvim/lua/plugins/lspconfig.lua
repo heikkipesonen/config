@@ -7,7 +7,12 @@ return {
         settings = {
           typescript = {
             suggest = {
-              completeFunctionCalls = true,
+              completeFunctionCalls = false,
+            },
+          },
+          javascript = {
+            suggest = {
+              completeFunctionCalls = false,
             },
           },
         },
